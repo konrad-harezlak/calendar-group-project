@@ -1,0 +1,7 @@
+<h1>FIRMY: </h1>
+
+<ul>
+    <% businesses.forEach(function(business) { %>
+        <li><a href="/business/<%= business.id %>"><%= business.name %></a> Description:<%= business.description%></li>
+    <% }); %> 
+</ul>
